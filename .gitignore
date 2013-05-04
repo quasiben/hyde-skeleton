@@ -1,0 +1,16 @@
+# Files #
+#########
+gh-pull.sh
+gh-pull*
+*gh-pull*
+*~
+*.pyc
+
+# Direcotries #
+###############
+.DS_Store
+deploy
+content/tags/*
+content/tags/
+.htaccess
+.htpass
