@@ -2,20 +2,21 @@
 
 {% block main -%}
 <article class="post">
-<nav class="post_nav">
-<a class="backlink" href="{{ content_url(resource.node.url) }}">Back to list</a>
-<a class="prev{{' disabled' if not resource.prev_by_time }}"
+<nav class="post_nav container">
+<a class="button column two backlink" href="{{ content_url(resource.node.url) }}">&larr;Back to list</a>
+<span class="column offset-by-six">&nbsp;</span>
+<a class="column two button prev{{' disabled' if not resource.prev_by_time }}"
     title="{{ resource.prev_by_time.meta.title }}"
     {% if resource.prev_by_time %}
     href="{{ content_url(resource.prev_by_time.url) }}"{% endif %}>
-    Previous
+    &laquo;Previous
 </a>
 
-<a class="next{{' disabled' if not resource.next_by_time }}"
+<a class="column three button next{{' disabled' if not resource.next_by_time }}"
     title="{{ resource.next_by_time.meta.title }}"
     {% if resource.next_by_time %}
     href="{{ content_url(resource.next_by_time.url) }}"{% endif %}>
-    Next
+    Next&raquo;
 </a>
 
 <br>
@@ -25,15 +26,15 @@
     data-count="vertical"
     data-via="{{ tweet_via }}">Tweet</a>
     <script type="text/javascript"
-        src="http://platform.twitter.com/widgets.js"></script-->
-</div>
+        src="http://platform.twitter.com/widgets.js"></script>
+</div-->
 <!--div id="facebook_like">
 <iframe src="http://www.facebook.com/plugins/like.php?href&amp;layout=box_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=65"
             scrolling="no"
             frameborder="0"
             style="border:none; overflow:hidden; width:450px; height:65px;"
-            allowTransparency="true"></iframe-->
-</div>
+            allowTransparency="true"></iframe>
+</div-->
 </nav>
 <h1 class="title">
     <a href="{{ content_url(resource.url) }}">
