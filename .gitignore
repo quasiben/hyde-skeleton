@@ -5,6 +5,9 @@ gh-pull*
 *gh-pull*
 *~
 *.pyc
+.hyde-deps
+.htaccess
+.htpass
 
 # Direcotries #
 ###############
@@ -12,5 +15,3 @@ gh-pull*
 deploy
 content/tags/*
 content/tags/
-.htaccess
-.htpass
